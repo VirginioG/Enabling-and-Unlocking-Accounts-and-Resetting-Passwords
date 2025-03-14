@@ -24,10 +24,10 @@ In this tutorial, you'll set up a Domain Controller (DC) and a Client Virtual Ma
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Part 1
-- Part 2
-- Part 3
-- Part 4
+- Log into DC-1 and select a previously created user account. Attempt to log in 10 times with an incorrect password to trigger a lockout.
+- Configure Group Policy to set the Account Lockout Threshold to 5 failed login attempts. Afterward, attempt to log in 6 times with an incorrect password and observe the account lockout in Active Directory.
+- Unlock the account in Active Directory, reset the password, and attempt to log in with the new credentials.
+- Disable the same account in Active Directory and try logging in to observe the error message. Re-enable the account and log in again. Finally, observe the logs on both the Domain Controller and Client Machine.
 
 <h2>Deployment and Configuration Steps</h2>
 
