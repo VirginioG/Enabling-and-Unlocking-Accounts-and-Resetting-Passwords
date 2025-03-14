@@ -3,7 +3,7 @@
 </p>
 
 <h1>Enabling-and-Unlocking-Accounts-and-Resetting-Passwords</h1>
-In this tutorial, you'll set up a Domain Controller (DC) and a Client Virtual Machine (VM) in Azure, where the Domain Controller serves as the DNS server for the Client VM. You'll also configure basic network settings, Active Directory, and ensure proper DNS resolution for seamless communication between both machines.<br />
+This tutorial teaches you how to handle account lockouts by configuring Group Policy to lock an account after a set number of failed login attempts. It also covers disabling and re-enabling accounts in Active Directory and observing the corresponding error messages when trying to log in. Finally, the tutorial shows how to monitor login activity by reviewing logs on both the Domain Controller and the Client Machine.<br />
 
 
 <h2>Video Demonstration</h2>
