@@ -25,8 +25,9 @@ This tutorial teaches you how to handle account lockouts by configuring Group Po
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Log into DC-1 and select a previously created user account. Attempt to log in 10 times with an incorrect password to trigger a lockout.
+- Log into DC-1 and select a previously created user account. 
 - Configure Group Policy to set the Account Lockout Threshold to 5 failed login attempts. Afterward, attempt to log in 6 times with an incorrect password and observe the account lockout in Active Directory.
+- To apply Group Policy changes immediately, you can use the command gpupdate /force in Command Prompt on a client machine or server.
 - Unlock the account in Active Directory, reset the password, and attempt to log in with the new credentials.
 - Disable the same account in Active Directory and try logging in to observe the error message. Re-enable the account and log in again. Finally, observe the logs on both the Domain Controller and Client Machine.
 
