@@ -32,12 +32,20 @@ This tutorial teaches you how to handle account lockouts by configuring Group Po
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+![Part4Part1](https://github.com/user-attachments/assets/7766f28b-4dce-4fcc-b974-5abc081dc6b1)
+
+
+
 </p>
 <p>
 Log into DC-1 and select a random user account.
 
 Configure Group Policy to lock the account after 5 failed login attempts.
+
+You can wait for the Group Policy to propagate automatically, or you can force an update immediately.
+On a client machine or server, open Command Prompt and type gpupdate /force, then press Enter.
 
 Try logging in with the wrong password 6 times to trigger the account lockout.
 
@@ -48,7 +56,12 @@ Unlock the account, reset the password, and attempt to log in again.
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+![Part4Part2](https://github.com/user-attachments/assets/62d6d874-9610-41c5-bb3c-24c3156c2343)
+
+
+
 </p>
 <p>
 Disable the same user account in Active Directory.
@@ -60,7 +73,11 @@ Re-enable the account and attempt to log in again.
 </p>
 <br />
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![Part4Part3](https://github.com/user-attachments/assets/5028d2d2-cdfd-4f2a-bca6-54a469e015bb)
+
+
+
 </p>
 <p>
 Check the logs on the Domain Controller for account lockout events.
