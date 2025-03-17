@@ -35,7 +35,15 @@ This tutorial teaches you how to handle account lockouts by configuring Group Po
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Log into DC-1 and select a random user account.
+
+Configure Group Policy to lock the account after 5 failed login attempts.
+
+Try logging in with the wrong password 6 times to trigger the account lockout.
+
+Observe that the account is locked in Active Directory.
+
+Unlock the account, reset the password, and attempt to log in again.
 </p>
 <br />
 
@@ -43,6 +51,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Disable the same user account in Active Directory.
+  
+Attempt to log in and observe the error message indicating the account is disabled.
+
+Re-enable the account and attempt to log in again.
+
+</p>
+<br />
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Check the logs on the Domain Controller for account lockout events.
+  
+Review logs on the client machine to observe login-related events.
 </p>
 <br />
