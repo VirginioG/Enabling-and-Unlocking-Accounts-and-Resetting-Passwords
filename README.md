@@ -15,7 +15,7 @@ This tutorial teaches you how to handle account lockouts by configuring Group Po
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Active Directory Domain Services
-- PowerShell
+
 
 <h2>Operating Systems Used </h2>
 
