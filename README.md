@@ -8,7 +8,7 @@ This tutorial teaches you how to handle account lockouts by configuring Group Po
 
 <h2>Video Demonstration</h2>
 
-- ### [](https://www.youtube.com)
+- ### [Enabling-and-Unlocking-Accounts-and-Resetting-Passwords](https://youtu.be/mQrzdTbR4ow?si=wkTwGXYv1dokEdKX)
 
 <h2>Environments and Technologies Used</h2>
 
